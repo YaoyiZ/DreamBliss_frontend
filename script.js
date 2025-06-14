@@ -123,7 +123,7 @@ checkoutButton.addEventListener('click', () => {
     checkoutButton.scrollIntoView({ behavior: 'smooth' }); // Scroll to the summary
 
     // 只发一次请求，包含全部商品
-    fetch('http://dreambliss-backend.onrender.com/orders', {
+    fetch('https://dreambliss-backend.onrender.com/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: items })
